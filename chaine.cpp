@@ -63,6 +63,11 @@ class chaine{
             res.str = str_cpy;
             return res;
         }
+
+        friend std::ostream& operator<<(std::ostream& os, const chaine &obj) {
+            os<<obj.str;
+            return os;
+        }   
 };
 
 
@@ -70,5 +75,6 @@ int main(){
     chaine s1("SALUT");
     chaine s2(" BB");
     chaine s3 = s1 + s2; 
+    cout<<s3<<endl;
     return 0;
 }
