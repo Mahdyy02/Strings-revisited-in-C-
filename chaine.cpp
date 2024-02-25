@@ -72,8 +72,8 @@ class chaine{
 
 
 int main(){
-    chaine s1("SALUT");
-    chaine s2(" BB");
+    chaine s1("1+1= ");
+    chaine s2(1+1);
     chaine s3 = s1 + s2; 
     cout<<s3<<endl;
     return 0;
